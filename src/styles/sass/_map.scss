@@ -1,0 +1,34 @@
+body {
+    font-family: Sans-serif;
+    font-size: 12px;
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.map {
+    height: 200px;
+}
+
+.city_item {
+    position: relative;
+    margin-bottom: 20px;
+
+    .city_title {
+
+    }
+
+    .city_item_description {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        background: #FFFFFF;
+        padding: 10px;
+        width: 200px;
+        right: 10px;
+        height: 155px;
+        text-align: justify;
+    }
+}
