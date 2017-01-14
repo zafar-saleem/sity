@@ -44,7 +44,7 @@ function setProperties() {
 }
 
 function setPageTitle() {
-    let pageTitle = 'Items';
+    let pageTitle = 'Events in the city Amsterdam';
     let $title = document.createElement('h3');
 
     $title.append(pageTitle);

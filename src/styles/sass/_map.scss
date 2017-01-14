@@ -15,6 +15,7 @@ body {
 .city_item {
     position: relative;
     margin-bottom: 20px;
+    border-bottom: 1px solid #CCCCCC;
 
     .city_title {
 
@@ -25,10 +26,12 @@ body {
         z-index: 1;
         top: 10px;
         background: #FFFFFF;
+        color: #FFFFFF;
         padding: 10px;
         width: 200px;
         right: 10px;
         height: 155px;
         text-align: justify;
+        background: url('http://localhost:2770/src/img/desc_bg.png') repeat;
     }
 }
