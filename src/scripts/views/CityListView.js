@@ -1,8 +1,6 @@
 import ItemTemplate from '../../templates/ItemTemplates.handlebars';
 import GoogleMapsLoader from 'google-maps';
 
-// const mapsapi = require('google-maps-api')('AIzaSyCkiPOgV6ekxgafkzc9UzoyUaAHL4yW2_M');
-
 let _model, _cityItem, _id;
 let _location = {};
 let $container = document.querySelector('.container');
