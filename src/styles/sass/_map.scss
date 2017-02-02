@@ -1,18 +1,40 @@
 body {
     font-family: Sans-serif;
     font-size: 12px;
+    background-color: #CCCCCC;
 
     .container {
-        width: 80%;
-        margin: 0 auto;
+        // width: 100%;
+        // margin: 0 auto;
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px 10px;
+            margin-bottom: 100px;
+            margin-top: 0px;
+            width: 100%;
+            z-index: 2;
+            box-shadow: 0 0 4px #666666;
+            background: #CCCCCC;
+        }
+
+        .items {
+            margin-top: 70px;
+        }
     }
 }
 
 .map {
     height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #666666;
 }
 
 .city_item {
+    width: 80%;
+    margin: 0 auto;
     position: relative;
     margin-bottom: 20px;
     border-bottom: 1px solid #CCCCCC;

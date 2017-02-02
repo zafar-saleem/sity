@@ -6,6 +6,7 @@ import GoogleMapsLoader from 'google-maps';
 let _model, _cityItem, _id;
 let _location = {};
 let $container = document.querySelector('.container');
+let $item = document.querySelector('.items');
 
 GoogleMapsLoader.KEY = 'AIzaSyCkiPOgV6ekxgafkzc9UzoyUaAHL4yW2_M';
 
@@ -15,7 +16,6 @@ const CityListView = {
         _model = model;
 
         setProperties();
-        // renderMap();
     }
 };
 
@@ -44,8 +44,10 @@ function setProperties() {
 }
 
 function setPageTitle() {
-    let pageTitle = 'Events in the city Amsterdam';
+    let pageTitle = 'Events in Amsterdam';
     let $title = document.createElement('h3');
+
+    $title.classList.add('header');
 
     $title.append(pageTitle);
 
@@ -58,7 +60,7 @@ function render() {
     }
 
     return new Promise((resolve, reject) => {
-        $container.insertAdjacentHTML('beforeend', ItemTemplate(_cityItem));
+        $item.insertAdjacentHTML('beforeend', ItemTemplate(_cityItem));
         resolve();
     });
 }
